@@ -5,10 +5,10 @@ from datetime import datetime
 
 # Page Config with dark mode
 st.set_page_config(
-    page_title="MS Rakha - CV", 
+    page_title="MS Rakha", 
     layout="wide",
     initial_sidebar_state="collapsed",
-    page_icon=":book",
+    page_icon=":book:",
     menu_items={
         'Get Help': 'https://rakhashaik.netlify.app',
         'Report a bug': 'https://rakhashaik.netlify.app',
