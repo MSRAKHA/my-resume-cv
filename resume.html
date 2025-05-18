@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakha MS</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/user-male-circle--v1.png" type="image/png">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(215, 207, 207, 0.1);
+        }
+
+        h1, h2, h3 {
+            
+            color: #040404;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            
+            font-size: 1.8rem;
+            border-bottom: 2px solid #040404;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        h3 { 
+            font-size: 1.4em;
+            margin-bottom: 0.5em;
+
+        } 
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        p {
+            font-size: 1em; /* 16px */
+            margin-bottom: 1em;
+        }
+        li {
+            font-size: 1em; /* 16px */
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3d5a80;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .key-skills, .contact-info, .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .key-skills span, .contact-info span, .links span {
+            background-color: #f9f9f9;
+            color: #293241;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .footer {
+            text-align: center;
+            text-align: center;
+            font-size: 0.9rem;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 20px;
+        }
+        /* Add these page-specific styles */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        /* Update your container class */
+        .container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        /* Add print-specific styles */
+        /* Add or modify these rules in your @media print section */
+        @media print {
+            /* Ensure Education section starts on new page with top margin */
+            .section:nth-of-type(4) { /* Education section */
+                page-break-before: auto;
+                margin-top: 30mm; /* Adjust this value to increase/decrease top spacing */
+                /* or you can use padding-top instead */
+                /* padding-top: 50mm; */
+            }
+        }
+        
+        @media print {
+            body {
+                font-size: 12pt;
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .container {
+                width: 210mm;
+                min-height: 297mm;
+                padding: 10mm;
+                margin: 0;
+                box-shadow: none;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        
+            /* Control page breaks */
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 10px;
+            }
+        
+            /* Ensure work experience and education sections do not start on new pages */
+            .section:nth-of-type(4) {
+                page-break-before: auto;
+            }
+            h1 { font-size: 24pt; }
+            h2 { font-size: 18pt; }
+            h3 { font-size: 14pt; }
+            /* Preserve background colors and graphics */
+            .key-skills span, 
+            .contact-info span, 
+            .links span{
+                font-size: 10pt;
+            }
+            .footer{
+                font-size: 10pt;
+            }
+            .libutton {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        
+            /* Ensure links are visible in print */
+            a {
+                color: #3d5a80 !important;
+                text-decoration: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rakha Shaik</h1>
+      
+
+       
+
+        <div class="section">
+            <h2>AWS Developer | Cloud Enthusiast | AWS Data Engineer</h2>
+
+          
+            <p>
+                Results-driven AWS Developer and Data Engineer with a strong focus on building scalable data solutions and optimizing cloud infrastructure. Committed to leveraging AWS technologies and data engineering practices to enhance data processing and analytics capabilities. Proven ability to design and implement efficient data pipelines and solutions that drive business insights.
+            </p>
+            <ul>
+                <li>Architect scalable data solutions using AWS best practices</li>
+                <li>Implement robust data pipelines for efficient data processing</li>
+                <li>Enhance data reliability through automated monitoring and quality checks</li>
+                <li>Promote data-driven culture to support organizational growth</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <h3>Product Engineer | TCS | August 2022 - Present</h3>
+            <ul>
+                <li>
+                    <strong>Cloud Infrastructure:</strong> Deployed and managed containerized applications using AWS EKS and ECR, enhancing scalability and availability.
+                </li>
+                <li>
+                    <strong>Data Engineering:</strong> Developed and implemented ETL pipelines and AWS Batch jobs to automate data processing and improve data workflows.
+                </li>
+               
+                <li>
+                    <strong>AI/ML Development:</strong> Engineered custom LLMs and implemented RAG frameworks, improving data analysis and retrieval accuracy.
+                </li>
+            </ul>
+        </div>
+
+       
+        <div class="section">
+            <h2>Skills</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>AWS & Cloud: S3, EC2, Lambda, Glue, Redshift, HealthLake, CloudFormation, Terraform</li>
+                        <li>AWS Generative AI: Amazon Bedrock, SageMaker, AWS Comprehend Medical, RAG Frameworks</li>
+                        <li>AWS DevOps: CodePipeline, GitHub Actions, Docker, Kubernetes, EKS/ECS</li>
+                        <li>Programming: Python, SQL, PySpark, React.js, Bash, HTML/CSS</li>
+                    </ul>
+                </div>
+                <div style="flex: 1;">
+                    <h3>Management Skills</h3>
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Team Leadership</li>
+                        <li>Agile Methodologies</li>
+                        <li>Stakeholder Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="padding-top: 30px;">
+            <h2>Projects</h2>
+            <h3>Roche Genentech Healthcare Data Platform (Jan 2025 - Present)</h3>
+            <p><strong>Client:</strong> Roche Genentech - Leading Biotechnology Company</p>
+            <p><strong>Role:</strong> AWS Data Engineer</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Designed data lake architecture for clinical trial data</li>
+                <li>Developed ETL pipelines for healthcare data</li>
+            </ul>
+
+            <h3>Project 1: AWS Supply Chain Analytics Platform</h3>
+            <p><strong>Client:</strong> Global Retail Corporation</p>
+            <p><strong>Tools & Technologies:</strong> AWS (ECS, ECR, Lambda), Python, React.js, Docker, CloudWatch</p>
+            <p><strong>Responsibilities:</strong> Led development of a supply chain analytics solution with AWS services and React.js dashboards; engineered ETL pipelines and monitoring.</p>
+
+            <h3>Project 2: AI-Powered Customer Service Platform</h3>
+            <p><strong>Client:</strong> Technology Services Provider</p>
+            <p><strong>Tools & Technologies:</strong> AWS Comprehend, Claude, RAG Framework, Python, Streamlit</p>
+            <p><strong>Responsibilities:</strong> Developed a custom LLM for automated support; created an interactive Streamlit interface and integrated sentiment analysis.</p>
+
+            <h3>Project 3: DFI Batch Job Scheduler</h3>
+            <p><strong>Client:</strong> DFI Corporation</p>
+            <p><strong>Tools & Technologies:</strong> AWS Step Functions, Lambda, EventBridge, Python, CloudWatch, Amazon Bedrock, Vector Database</p>
+            <p><strong>Responsibilities:</strong> Implemented batch jobs for data extraction and transformation, achieving 99.9% reliability with monitoring and error handling.</p>
+
+            <h3>Project 4: Technical Documentation Generator</h3>
+            <p><strong>Client:</strong> Internal Tool Development</p>
+            <p><strong>Tools & Technologies:</strong> Claude API, Python, Streamlit, RAG Framework, Vector Database</p>
+            <p><strong>Responsibilities:</strong> Developed an AI-powered documentation generator with version control and templates for high-quality technical content.</p>
+
+            <h3>Project 5: DevOps Pipeline for Flask Application</h3>
+            <p><strong>Client:</strong> Enterprise Solutions Provider</p>
+            <p><strong>Tools & Technologies:</strong> Jenkins, Docker, Kubernetes, AWS EKS, Flask, Prometheus, Grafana</p>
+            <p><strong>Responsibilities:</strong> Designed a CI/CD pipeline for Flask deployment; established monitoring solutions, reducing deployment time by 70% while ensuring performance.</p>
+        </div>
+        <div class="section" style="padding-top: 30px;">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Solutions Architect - Associate</li>
+                <li>AWS Certified Cloud Practitioner</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <h3>B.Tech, Ashoka Women's Engineering College</h3>
+            <p>ECE | 2018-2022 | CGPA: 9.1</p>
+            <ul>
+                <li>President of Ashoka Student Club</li>
+                <li>Winner of multiple quiz competitions</li>
+            </ul>
+
+            <h3>Intermediate & School, Nalanda University</h3>
+            <p>2016-2018 | CGPA: 9.8</p>
+            
+        </div>
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Participated in TechFM Hackathon challenges, showcasing skills in innovative problem-solving and collaboration.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Languages</h2>
+            <p>English | Hindi | Telugu</p>
+        </div>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <span><a class="libutton" href="https://rakhashaik.netlify.app" target="_blank">Portfolio</a></span>
+
+                <span>📞 +91 6305675227</span>
+                <span>📧 <a href="mailto:1.rakha.ms@gmail.com">1.rakha.ms@gmail.com</a></span>
+                <span>📍 Andhra Pradesh, India</span>
+            </div>
+        </div>
+        <div class="section">
+          
+      <style>
+        .libutton {
+            
+          font-size: 1em;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 7px;
+          text-align: center;
+          outline: none;
+          text-decoration: none !important;
+          color: #ffffff !important;
+          width: 200px;
+          height: 32px;
+          border-radius: 16px;
+          background-color: #518dd2;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+      </style>  
+      
+                    
+                
+        </div>
+      
+    </div>
+</body>
+</html>
