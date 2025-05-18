@@ -464,4 +464,4 @@ with right_col:
 
 # Footer
 st.markdown("---")
-st.markdown('<div style="text-align: center;">Crafted with Streamlit | ©️ 2025 Rakha Shaik</div>', unsafe_allow_html=True)s
+st.markdown('<div style="text-align: center;">Crafted with Streamlit | ©️ 2025 Rakha Shaik</div>', unsafe_allow_html=True)
