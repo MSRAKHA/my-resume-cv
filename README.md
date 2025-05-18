@@ -1,2 +1,2 @@
 # my-resume-cv
-msrakha-resume.streamlit.app
+msrakha-resume-cv.streamlit.app
