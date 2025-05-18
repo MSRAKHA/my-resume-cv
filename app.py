@@ -8,11 +8,11 @@ st.set_page_config(
     page_title="MS Rakha - CV", 
     layout="wide",
     initial_sidebar_state="collapsed",
-    page_icon="📊",
+    page_icon=":book",
     menu_items={
         'Get Help': 'https://rakhashaik.netlify.app',
         'Report a bug': 'https://rakhashaik.netlify.app',
-        'About': 'AWS Developer | Cloud Enthusiast | AWS Data Engineer'
+        'About': 'AWS Data Engineer | AWS Developer | Cloud Enthusiast'
     }
 )
 
@@ -44,8 +44,29 @@ st.markdown("""
     .title {
         font-size: 1.5rem;
         text-align: center;
-        color: #f0f2f6;
         margin-bottom: 1.5rem;
+    }
+    
+    .title-segment {
+        display: inline-block;
+        padding: 3px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+    
+    .aws-dev {
+        color: #ff9900;
+        background-color: #232f3e;
+    }
+    
+    .aws-data {
+        color: #00c853;
+        background-color: #1e302a;
+    }
+    
+    .aws-devops {
+        color: #8c52ff;
+        background-color: #2a1e30;
     }
     
     .sub-header {
@@ -191,7 +212,7 @@ st.markdown("""
 
 # Header Section
 st.markdown('<h1 class="main-header">Rakha Shaik</h1>', unsafe_allow_html=True)
-st.markdown('<div class="title">| AWS Data Engineer | AWS DevOps </div>', unsafe_allow_html=True)
+st.markdown('<div class="title"><span class="title-segment aws-dev">AWS Developer |</span><span class="title-segment aws-data">AWS Data Engineer | </span><span class="title-segment aws-devops">AWS DevOps | Cloud Enthusiast</span></div>', unsafe_allow_html=True)
 
 # Contact Information - Evenly spaced row
 st.markdown("""
@@ -443,4 +464,4 @@ with right_col:
 
 # Footer
 st.markdown("---")
-st.markdown('<div style="text-align: center;">Crafted with Streamlit | ©️ 2025 Rakha Shaik</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: center;">Crafted with Streamlit | ©️ 2025 Rakha Shaik</div>', unsafe_allow_html=True)s
