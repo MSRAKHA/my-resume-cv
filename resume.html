@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakha MS</title>
-    <!-- Favicon -->
     <link rel="icon" href="https://img.icons8.com/color/48/000000/user-male-circle--v1.png" type="image/png">
     <style>
         body {
@@ -349,6 +348,419 @@
                 
         </div>
       
+    </div>
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/user-female-circle--v1.png" type="image/png">
+    <title>Rakha's Resume</title>
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="https://img.icons8.com/color/48/000000/user-male-circle--v1.png" type="image/png"> -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            padding: 10mm;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(215, 207, 207, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #040404;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        
+        .dob {
+            font-size: 0.8rem;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: 2px solid #040404;
+            padding-bottom: 2px;
+            margin-top: 8px;
+        }
+
+        h3 { 
+            font-size: 1rem;
+            margin-bottom: 0.2em;
+        } 
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        
+        p {
+            font-size: 0.9em;
+            margin-bottom: 0.4em;
+            margin-top: 0.2em;
+        }
+        
+        li {
+            font-size: 0.9em;
+            margin-bottom: 3px;
+        }
+
+        a {
+            color: #3d5a80;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 8px;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .key-skills, .contact-info, .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .key-skills span, .contact-info span, .links span {
+            background-color: #f9f9f9;
+            color: #293241;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .project-item {
+            margin-bottom: 5px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .project-details {
+            margin-top: 0;
+            margin-left: 8px;
+        }
+        
+        /* Page-specific styles */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        /* Print-specific styles */
+        @media print {
+            body {
+                font-size: 10pt;
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .container {
+                width: 210mm;
+                height: 297mm;
+                padding: 8mm;
+                margin: 0;
+                box-shadow: none;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 5px;
+            }
+        
+            h1 { font-size: 16pt; }
+            h2 { font-size: 12pt; }
+            h3 { font-size: 11pt; }
+            
+            .key-skills span, 
+            .contact-info span, 
+            .links span{
+                font-size: 8pt;
+            }
+            
+            .footer{
+                font-size: 8pt;
+            }
+            
+            a {
+                color: #3d5a80 !important;
+                text-decoration: none;
+            }
+        }
+        
+        .libutton {
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: center;
+            outline: none;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            border-radius: 12px;
+            background-color: #518dd2;
+            font-size: 0.8em;
+        }
+
+        .compact-list li {
+            margin-bottom: 2px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .project-card {
+            padding: 5px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 0.95rem;
+        }
+
+        .project-card p {
+            margin: 2px 0;
+            font-size: 0.85rem;
+        }
+
+        .project-card ul {
+            margin: 2px 0 0 8px;
+        }
+
+        .project-card li {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rakha Shaik</h1>
+            <p class="dob">DOB: January 2000</p>
+            <h2> Data Engineer | Developer | Cloud Enthusiast </h2>
+        </div>
+
+        <div class="flex-container">
+            <div class="column">
+                <div class="section">
+                    <h2>Professional Summary</h2>
+                    <p>
+                        Results-driven AWS Developer and Data Engineer with a strong focus on building scalable data solutions and optimizing cloud infrastructure. Proven ability to design and implement efficient data pipelines that drive business insights.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Work Experience</h2>
+                    <h3>Product Engineer | TCS | August 2022 - Present</h3>
+                    <ul class="compact-list">
+                        <li>
+                            <strong>Cloud Infrastructure:</strong> Deployed and managed containerized applications using AWS EKS and ECR, enhancing scalability and availability.
+                        </li>
+                        <li>
+                            <strong>Data Engineering:</strong> Developed and implemented ETL pipelines and AWS Batch jobs to automate data processing and improve data workflows.
+                        </li>
+                        <li>
+                            <strong>AI/ML Development:</strong> Engineered custom LLMs and implemented RAG frameworks, improving data analysis and retrieval accuracy.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Skills</h2>
+                    <div class="flex-container" style="gap: 8px;">
+                        <div style="flex: 1;">
+                            <h3>Technical Skills</h3>
+                            <ul class="compact-list">
+                                <li><strong>AWS Core Services:</strong> S3, EC2, Lambda, CloudFormation, IAM, VPC, CloudWatch</li>
+                                <li><strong>Data Engineering:</strong> AWS Glue, Redshift, AppFlow, Apache Airflow, PySpark, Databricks</li>
+                                <li><strong>AI/ML:</strong> Amazon Bedrock, SageMaker, AWS Comprehend Medical, RAG Frameworks</li>
+                                <li><strong>DevOps:</strong> CodePipeline, GitHub Actions, Docker, Kubernetes, EKS/ECS, Terraform</li>
+                                <li><strong>Programming:</strong> Python, SQL, HTML/CSS,Bash,JSON,YAML</li>
+                            </ul>
+                            <div style="flex: 1;">
+                                <h3>Management Skills</h3>
+                                <ul class="compact-list">
+                                    <li>Project Management</li>
+                                    <li>Team Leadership</li>
+                                    <li>Agile Methodologies</li>
+                                    <li>Stakeholder Communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="section" style="margin-top: auto;">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <span><a class="libutton" href="https://rakhashaik.netlify.app" target="_blank">Portfolio</a></span>
+                        <span> <a class="libutton" href="mailto:1.rakha.ms@gmail.com" target="_blank">1.rakha.ms@gmail.com</a></span>
+                        <span >📞  +91 6305675227</span>
+        
+                        <span>📍 Andhra Pradesh, India</span>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Education</h2>
+                    <h3>B.Tech, Ashoka Women's Engineering College</h3>
+                    <p>ECE | 2018-2022 | CGPA: 9.1</p>
+                    <ul class="compact-list">
+                        <li>President of Ashoka Student Club</li>
+                        <li>Winner of multiple quiz competitions</li>
+                    </ul>
+
+                    <h3>Intermediate & School, Nalanda University</h3>
+                    <p>2016-2018 | CGPA: 9.8</p>
+                </div>
+
+                <div class="section">
+                    <h2>Certifications</h2>
+                    <ul class="compact-list">
+                        <li>AWS Certified Solutions Architect - Associate</li>
+                        <li>AWS Certified Cloud Practitioner</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Course Work Projects</h2>
+                    <div class="project-item">
+                        <div class="project-title">Vehicle Damage Insurance Calculator</div>
+                        <ul class="project-details compact-list">
+                            <li>Developed an automated system to calculate insurance claims based on vehicle damage assessment</li>
+                            <li>Achieved 91% efficiency in damage detection and cost estimation</li>
+                            <li>Technologies: Machine Learning, Computer Vision, Python</li>
+                            <a class="libutton" href="https://rakhamsprojecturls.streamlit.app/" target="_blank">Projects Urls</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Languages & Achievements</h2>
+                    <p><strong>Languages:</strong> English | Hindi | Telugu</p>
+                    <p><strong>Achievements:</strong> Participated in TechFM Hackathon challenges, showcasing skills in innovative problem-solving and collaboration.</p>
+                </div>
+
+       
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Roche Genentech Healthcare Data Platform</h3>
+                    <p><strong>Client:</strong> Roche Genentech - Leading Biotechnology Company</p>
+                    <p><strong>Role:</strong> AWS Data Engineer</p>
+                    <ul class="compact-list">
+                        <li>Designed data lake architecture for clinical trial data</li>
+                        <li>Developed ETL pipelines for healthcare data processing</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>AWS Supply Chain Analytics Platform</h3>
+                    <p><strong>Client:</strong> Global Retail Corporation</p>
+                    <p><strong>Tools:</strong> AWS (ECS, ECR, Lambda), Python, React.js</p>
+                    <ul class="compact-list">
+                        <li>Led development of a supply chain analytics solution</li>
+                        <li>Engineered ETL pipelines and monitoring systems</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>AI-Powered Customer Service Platform</h3>
+                    <p><strong>Client:</strong> Technology Services Provider</p>
+                    <p><strong>Tools:</strong> AWS Comprehend, Claude, RAG Framework, Python</p>
+                    <ul class="compact-list">
+                        <li>Developed a custom LLM for automated support</li>
+                        <li>Created interactive Streamlit interface with sentiment analysis</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>DFI Batch Job Scheduler</h3>
+                    <p><strong>Client:</strong> DFI Corporation</p>
+                    <p><strong>Tools:</strong> AWS Step Functions, Lambda, EventBridge, Python</p>
+                    <ul class="compact-list">
+                        <li>Implemented batch jobs for data extraction and transformation</li>
+                        <li>Achieved 99.9% reliability with monitoring and error handling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>References available upon request</p>
+        </div>
     </div>
 </body>
 </html>
