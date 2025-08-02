@@ -218,7 +218,7 @@ st.markdown('<div class="title"><span class="title-segment aws-dev">AWS Develope
 st.markdown("""
 <div class="contact-info">
     <div class="contact-item">📧 1.rakha.ms@gmail.com</div>
-    <div class="contact-item">📞 +91 6305675227</div>
+    <div class="contact-item">📞 +91 0000000000</div>
     <div class="contact-item">📍 Andhra Pradesh, India</div>
     <div class="contact-item">🌐 <a href="https://rakhashaik.netlify.app" target="_blank" style="color: #4da6ff;">Portfolio</a></div>
 </div>
