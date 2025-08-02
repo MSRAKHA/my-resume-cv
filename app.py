@@ -54,7 +54,7 @@ st.markdown("""
         border-radius: 5px;
     }
     
-    .aws-dev {
+    .-dev {
         color: #ff9900;
         background-color: #232f3e;
     }
@@ -452,7 +452,7 @@ with right_col:
     st.markdown('<div class="project-title">DevOps Pipeline for Flask Application</div>', unsafe_allow_html=True)
     st.markdown('<div class="project-details">', unsafe_allow_html=True)
     st.markdown("**Client:** Enterprise Solutions Provider")
-    st.markdown("**Tools:** Jenkins, Docker, Kubernetes, AWS EKS, Flask, Prometheus, Grafana")
+    st.markdown("**Tools:** Jenkins, Docker, Kubernetes, AWS EKS, Flask, Prometheus, Grafana,Jira,ServiceNow")
     st.markdown("""**Key Achievements:**
     • Designed a CI/CD pipeline for Flask deployment
     • Established monitoring solutions with Prometheus and Grafana
